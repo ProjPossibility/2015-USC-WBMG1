@@ -1,1 +1,1 @@
-Tic-Tac-Tow for people with disability	
+Tic-Tac-Toe for people with disability	
