@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Text to Speech Try</title>
+		<script type="text/javascript">
+		function playAudio()
+		{
+			//get text
+			textElem = document.getElementById('input_text');
+			text = textElem.value;
+			//get audio
+			var audio = new Audio();
+			audio.src ='http://translate.google.com/translate_tts?tl=en&q=' + encodeURIComponent(text);
+			//play audio
+			audio.play();
+		}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="input_text" placeholder="Your text here!">
+		<br/>
+		<button id="play_button" onclick="playAudio();">Listen</button>
+	</body>
+
+</html>
